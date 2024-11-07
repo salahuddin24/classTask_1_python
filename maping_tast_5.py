@@ -1,11 +1,10 @@
 
-def words_lengths(word_list):
-    return [len(word) for word in word_list]
-
-# Example usage
 words = ["apple", "banana", "cherry", "blueberry", "kiwi"]
-lengths = words_lengths(words)
 
-# Print the result
-print("Words:", words)
-print("Lengths:", lengths)
+
+def print_word(x):
+    find_index = words.index(x)
+    print(find_index + 1,":", x)
+    # return find_index + 1, ":", x
+result = list(map(print_word, words))
+# print(result)
